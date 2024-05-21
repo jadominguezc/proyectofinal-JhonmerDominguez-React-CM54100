@@ -1,0 +1,88 @@
+/* src/css/brief.css */
+.brief {
+    padding: 20px;
+    margin: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.76);
+    border-radius: 0.8rem;
+    margin-top: 150px;    width: 90%;
+    border: 1px solid black;
+    justify-items: center;
+  }
+  
+  .brief h2{
+    color:rgb(245, 119, 17);
+    text-align: center;
+  }
+
+
+  .brief .brief-table-head {
+    width: 100%;
+    color: black;
+    background-color: white;
+  }
+
+  .brief .brief-table-body {
+    width: 100%;
+    color: black;
+    background-color: white;
+  }
+
+  .brief .brief-action-button{
+    font-family: "DM Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    background-color: rgb(245, 119, 17);
+    color: black;
+    border-color: rgb(245, 119, 17);
+    font-weight: bolder;
+    border-radius: 0.8rem;
+  }
+
+  .brief .brief-action-button:hover{
+    font-family: "DM Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    background-color: rgb(245, 119, 17);
+    color: black;
+    border-color: rgb(245, 119, 17);
+    font-weight: bolder;
+    border-radius: 0.8rem;
+  }
+
+  .brief .total{
+    color:rgb(245, 119, 17);
+  }
+  
+  .brief th, .brief td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .brief th {
+    background-color: #f2f2f2;
+    text-align: left;
+
+  }
+  
+  .total {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  button {
+    font-family: "DM Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    background-color: rgb(245, 119, 17);
+    color: black;
+    border-color: rgb(245, 119, 17);
+    font-weight: bolder;
+    border-radius: 0.8rem;
+  }
+  
+  button:hover {
+    background-color: rgb(247, 165, 99);
+    color: black;
+    font-weight: bold;
+  }
+  

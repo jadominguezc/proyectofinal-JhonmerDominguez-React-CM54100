@@ -1,0 +1,82 @@
+.item-card {
+    margin: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.76);
+    border-radius: 0.8rem;
+    margin-top: 20px;    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-title-page{
+    font-family: "DM Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: rgb(245, 119, 17);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 0,5rem;
+}
+
+.item-card-picture {
+    padding: 0.1rem;
+    border-radius: 0.8rem;
+    width: 100%;
+}
+
+.item-card-picture:hover {
+    filter: saturate(150%);
+  }
+
+.item-card-title {
+    font-family: "DM Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: rgb(245, 119, 17);
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.item-card-description{
+    font-family: "DM Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.item-card-price{
+    font-family: "DM Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+}
+
+.item-card-button{
+    font-family: "DM Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    background-color: rgb(245, 119, 17);
+    color: black;
+    border-color: rgb(245, 119, 17);
+    font-weight: bolder;
+    margin-left: 8rem;
+    border-radius: 0.8rem;
+}
+
+.item-card-button:hover{
+    background-color: rgb(247, 165, 99);
+    color: black;
+    font-weight: bold;
+}
+
+.item-link{
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 60px;
+}

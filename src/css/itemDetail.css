@@ -1,0 +1,86 @@
+.item-detail {
+  margin: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.76);
+  border-radius: 0.8rem;
+  margin-top: 40px;    width: 500px;
+  padding: 10px;
+  border: 1px solid black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.2;
+  text-decoration: none;
+}
+
+.item-detail h2 {
+  margin: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: rgb(245, 119, 17);
+  font-weight: bolder;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.item-detail p {
+  margin: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.item-detail img {
+  padding: 0.1rem;
+  border-radius: 0.8rem;
+  width: 35%;
+  margin-left: 150px;
+  margin-bottom: 10px;
+}
+
+.item-detail h3 {
+  margin: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: rgb(245, 119, 17);
+  font-size: 30px;
+  text-align: right;
+}
+
+.item-card-button{
+  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  background-color: rgb(245, 119, 17);
+  color: black;
+  border-color: rgb(245, 119, 17);
+  font-weight: bolder;
+  margin-left: 20px;
+}
+
+.item-card-button:hover{
+  background-color: rgb(247, 165, 99);
+  color: black;
+  font-weight: bold;
+
+}
+
+.item-count-qty {
+  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: white;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  width: 20px;
+}
+
+.manage-cart {
+  display:inline-block;
+  position: relative;
+  margin-left: 400px;
+  color: black;
+}
