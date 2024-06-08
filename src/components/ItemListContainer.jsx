@@ -6,10 +6,11 @@ import ItemList from './ItemList';
 import { CartContext } from './CartContext';
 import '../css/itemListContainer.css';
 
+
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const { categoryId } = useParams();
-  const { incrementCartCount } = useContext(CartContext); // Lo uso para obtener la función del contexto
+  const { addToCart } = useContext(CartContext); // Usar addToCart del contexto
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -31,7 +32,7 @@ const ItemListContainer = () => {
   }, [categoryId]);
 
   const handleButtonClick = (item) => {
-    incrementCartCount(1); // Lo uso para incrementar el contador
+    addToCart(item); // Usar addToCart para agregar el artículo al carrito
     console.log('Button clicked', item);
   };
 

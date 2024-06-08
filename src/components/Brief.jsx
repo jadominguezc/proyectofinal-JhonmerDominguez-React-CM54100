@@ -1,33 +1,12 @@
+// BRIEF.JSX
 import React, { useContext } from 'react';
 import { CartContext } from './CartContext';
 import '../css/brief.css';
 
 const Brief = () => {
-  const { cart, setCart, setCartCount } = useContext(CartContext);
+  const { cart, incrementCartCount, decrementCartCount, removeItemById, getTotal } = useContext(CartContext);
 
-  const incrementQty = (id) => {
-    setCart((prevCart) => prevCart.map((item) => 
-      item.id === id ? { ...item, qty: item.qty + 1 } : item
-    ));
-    setCartCount((prevCount) => prevCount + 1);
-  };
-
-  const decrementQty = (id) => {
-    setCart((prevCart) => 
-      prevCart
-        .map((item) => item.id === id ? { ...item, qty: item.qty - 1 } : item)
-        .filter((item) => item.qty > 0)
-    );
-    setCartCount((prevCount) => prevCount - 1);
-  };
-
-  const removeItem = (id) => {
-    const itemToRemove = cart.find((item) => item.id === id);
-    setCartCount((prevCount) => prevCount - itemToRemove.qty);
-    setCart((prevCart) => prevCart.filter((item) => item.id !== id));
-  };
-
-  const totalAmount = cart.reduce((acc, item) => acc + item.price * item.qty, 0);
+  const totalAmount = getTotal();
 
   return (
     <div className="brief">
@@ -37,7 +16,7 @@ const Brief = () => {
           <tr>
             <th>CANT</th>
             <th>DESCRIPCIÓN</th>
-            <th>PRECIO</th>
+            <th>PRECIO UNITARIO</th>
             <th>ACCIONES</th>
           </tr>
         </thead>
@@ -48,9 +27,9 @@ const Brief = () => {
               <td>{item.description}</td>
               <td>${item.price}</td>
               <td>
-                <button className="brief-action-button" onClick={() => incrementQty(item.id)}>+</button>
-                <button className="brief-action-button" onClick={() => decrementQty(item.id)}>-</button>
-                <button className="brief-action-button" onClick={() => removeItem(item.id)}>Eliminar</button>
+                <button className="brief-action-button" onClick={() => incrementCartCount(item.id)}>+</button>
+                <button className="brief-action-button" onClick={() => decrementCartCount(item.id)}>-</button>
+                <button className="brief-action-button" onClick={() => removeItemById(item.id)}>Eliminar</button>
               </td>
             </tr>
           ))}

@@ -3,7 +3,7 @@ import { CartContext } from './CartContext';
 import '../css/itemCount.css';
 
 const ItemCount = () => {
-  const { cartCount, incrementCartCount } = useContext(CartContext);
+  const { cartCount } = useContext(CartContext);
 
   return (
     <div className="item-count">
